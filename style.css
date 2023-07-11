@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #efecec;
+}
+
+.navbar img{
+    width: 40px;
+    mix-blend-mode:normal;
+}
+
+.navbar ul li{
+    margin: 10px;
+    font-size: 14px;
+}
+
+.navbar ul li a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.navbar ul li a:before{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    height: 2px;
+    width: 0;
+    background: red;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover:before{
+    width: 78px;
+}
+
+#challenge{
+    height: 60px;
+    background: #fff;
+    border: 1px solid #efecec;
+    position: sticky;
+    top: 0;
+}
+#challenge h6{
+    margin-left: 12%;
+    width: 140px;
+    padding: 19px;
+}
+
+.solution .fs p{
+    background: rgb(248, 246, 243);
+    width: 50px;
+}
+.new{
+    margin-left: 5%;
+}
+
+.new p{
+    background: rgb(248, 246, 243);
+    width: 100px;
+}
+
+.new p span{
+    width: 100%;
+}
+
+.btn-dange{
+    background-color: rgb(224, 5, 5);
+    color: #fff;
+    width: 250px;
+    margin: auto;
+}
+
+.btn-light{
+     background-color: #fff;
+     color: rgb(90, 90, 232);
+     width: 220px;
+     padding: 0.60rem 0;
+     font-family: 'Roboto', sans-serif;
+     margin: auto;
+}
+
+.assets i .fa{
+    color: rgba(105, 200, 107, 0.907);
+}
+
+.pics img{
+    width: 20%;
+}
+
+@media screen and (max-width: 772px){
+    #solution .row{
+        flex-direction: column-reverse;
+    }
+
+    #discord .discord{
+        width: auto;
+    }
+
+    .pics img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .mentor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blue{
+        text-align:center!important ;
+    }
+
+    .haut{
+        display: flex;
+       flex-direction: column;
+    }
+
+    .haut input{
+        width: 90%;
+        height: 20%;
+        margin: auto;
+        margin-top: 13%;
+    }
+
+    .haut button{
+        width: 90%;
+        height: 22%;
+        margin: auto;
+        margin-bottom: 20%;
+    }
+}
